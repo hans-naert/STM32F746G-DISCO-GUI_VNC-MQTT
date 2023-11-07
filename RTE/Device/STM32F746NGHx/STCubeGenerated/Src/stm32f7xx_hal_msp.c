@@ -21,6 +21,7 @@
 
 /* Includes ------------------------------------------------------------------*/
 #include "main.h"
+
 /* USER CODE BEGIN Includes */
 
 /* USER CODE END Includes */
@@ -248,7 +249,7 @@ void HAL_LTDC_MspInit(LTDC_HandleTypeDef* hltdc)
   /** Initializes the peripherals clock
   */
     PeriphClkInitStruct.PeriphClockSelection = RCC_PERIPHCLK_LTDC;
-    PeriphClkInitStruct.PLLSAI.PLLSAIN = 192;
+    PeriphClkInitStruct.PLLSAI.PLLSAIN = 50;
     PeriphClkInitStruct.PLLSAI.PLLSAIR = 2;
     PeriphClkInitStruct.PLLSAI.PLLSAIQ = 2;
     PeriphClkInitStruct.PLLSAI.PLLSAIP = RCC_PLLSAIP_DIV2;

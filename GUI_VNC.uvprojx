@@ -414,6 +414,11 @@
               <FileType>1</FileType>
               <FilePath>.\MQTTEcho.c</FilePath>
             </File>
+            <File>
+              <FileName>io_interface.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>.\io_interface.c</FilePath>
+            </File>
           </Files>
         </Group>
         <Group>
@@ -957,6 +962,11 @@
               <FileName>MQTTEcho.c</FileName>
               <FileType>1</FileType>
               <FilePath>.\MQTTEcho.c</FilePath>
+            </File>
+            <File>
+              <FileName>io_interface.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>.\io_interface.c</FilePath>
             </File>
           </Files>
         </Group>

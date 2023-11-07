@@ -52,14 +52,16 @@ extern "C" {
 
 /* Exported functions prototypes ---------------------------------------------*/
 void Error_Handler(void);
-void   MX_ETH_Init(void);
-void   MX_LTDC_Init(void);
+void MX_ETH_Init(void);
+void MX_LTDC_Init(void);
 
 /* USER CODE BEGIN EFP */
 
 /* USER CODE END EFP */
 
 /* Private defines -----------------------------------------------------------*/
+#define EXT_SHLD_LED0_Pin GPIO_PIN_6
+#define EXT_SHLD_LED0_GPIO_Port GPIOF
 
 /* USER CODE BEGIN Private defines */
 extern void app_main (void *arg);

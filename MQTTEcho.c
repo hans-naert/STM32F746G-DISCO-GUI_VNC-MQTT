@@ -1,5 +1,4 @@
 // MQTT Echo
-
 #include <string.h>
 #include "MQTTClient.h"
 
@@ -14,10 +13,24 @@
 #define SERVER_PORT 1883
 #endif
 
+void set_led0(int high);
+
 void messageArrived(MessageData* data)
 {
   printf("Message arrived on topic %.*s: %.*s\n", data->topicName->lenstring.len, data->topicName->lenstring.data,
   data->message->payloadlen, (char *)data->message->payload);
+	
+	if(!strncmp(data->message->payload,"1",data->message->payloadlen))
+	{
+		printf("set LED0 high\n");
+		set_led0(1);
+	}
+	if(!strncmp(data->message->payload,"0",data->message->payloadlen))
+	{
+		printf("set LED0 low\n");
+		set_led0(0);
+	}
+	
 }
 
 void MQTTEcho_Test (void)
@@ -59,8 +72,11 @@ void MQTTEcho_Test (void)
   if ((rc = MQTTSubscribe(&client, "MDK/sample/#", QOS2, messageArrived)) != 0)
     printf("Return code from MQTT subscribe is %d\n", rc);
 
-  while (++count <= 10)
+  while (1)
   {
+		
+		if(++count <= 10)
+		{
     MQTTMessage message;
     char payload[30];
 
@@ -72,6 +88,7 @@ void MQTTEcho_Test (void)
 
     if ((rc = MQTTPublish(&client, "MDK/sample/a", &message)) != 0)
       printf("Return code from MQTT publish is %d\n", rc);
+	}
 
 #if !defined(MQTT_TASK)
     if ((rc = MQTTYield(&client, 1000)) != 0)
