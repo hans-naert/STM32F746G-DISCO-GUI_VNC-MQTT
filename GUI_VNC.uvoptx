@@ -160,18 +160,18 @@
       </TargetDriverDllRegistry>
       <Breakpoint/>
       <ScvdPack>
-        <Filename>C:\Users\hansn\AppData\Local\Arm\Packs\ARM\CMSIS\5.9.0\CMSIS\RTOS2\RTX\RTX5.scvd</Filename>
-        <Type>ARM.CMSIS.5.9.0</Type>
+        <Filename>C:\Users\u0081767\AppData\Local\Arm\Packs\ARM\CMSIS-RTX\5.8.0\RTX5.scvd</Filename>
+        <Type>ARM::CMSIS-RTX@5.8.0</Type>
         <SubType>1</SubType>
       </ScvdPack>
       <ScvdPack>
-        <Filename>C:\Users\hansn\AppData\Local\Arm\Packs\Keil\ARM_Compiler\1.7.2\EventRecorder.scvd</Filename>
-        <Type>Keil.ARM_Compiler.1.7.2</Type>
+        <Filename>C:\Users\u0081767\AppData\Local\Arm\Packs\ARM\CMSIS-View\1.1.0\EventRecorder\EventRecorder.scvd</Filename>
+        <Type>ARM::CMSIS-View@1.1.0</Type>
         <SubType>1</SubType>
       </ScvdPack>
       <ScvdPack>
-        <Filename>C:\Users\hansn\AppData\Local\Arm\Packs\Keil\MDK-Middleware\7.16.0\Network\Network.scvd</Filename>
-        <Type>Keil.MDK-Middleware.7.16.0</Type>
+        <Filename>C:\Users\u0081767\AppData\Local\Arm\Packs\Keil\MDK-Middleware\7.17.0\Network\Network.scvd</Filename>
+        <Type>Keil::MDK-Middleware@7.17.0</Type>
         <SubType>1</SubType>
       </ScvdPack>
       <Tracepoint>
@@ -575,7 +575,7 @@
 
   <Group>
     <GroupName>::CMSIS</GroupName>
-    <tvExp>0</tvExp>
+    <tvExp>1</tvExp>
     <tvExpOptDlg>0</tvExpOptDlg>
     <cbSel>0</cbSel>
     <RteFlg>1</RteFlg>
@@ -590,8 +590,16 @@
   </Group>
 
   <Group>
-    <GroupName>::Compiler</GroupName>
-    <tvExp>1</tvExp>
+    <GroupName>::CMSIS-Compiler</GroupName>
+    <tvExp>0</tvExp>
+    <tvExpOptDlg>0</tvExpOptDlg>
+    <cbSel>0</cbSel>
+    <RteFlg>1</RteFlg>
+  </Group>
+
+  <Group>
+    <GroupName>::CMSIS-View</GroupName>
+    <tvExp>0</tvExp>
     <tvExpOptDlg>0</tvExpOptDlg>
     <cbSel>0</cbSel>
     <RteFlg>1</RteFlg>
@@ -599,7 +607,7 @@
 
   <Group>
     <GroupName>::Device</GroupName>
-    <tvExp>1</tvExp>
+    <tvExp>0</tvExp>
     <tvExpOptDlg>0</tvExpOptDlg>
     <cbSel>0</cbSel>
     <RteFlg>1</RteFlg>
@@ -623,7 +631,7 @@
 
   <Group>
     <GroupName>::IoT Client</GroupName>
-    <tvExp>0</tvExp>
+    <tvExp>1</tvExp>
     <tvExpOptDlg>0</tvExpOptDlg>
     <cbSel>0</cbSel>
     <RteFlg>1</RteFlg>
@@ -639,7 +647,7 @@
 
   <Group>
     <GroupName>::Network</GroupName>
-    <tvExp>0</tvExp>
+    <tvExp>1</tvExp>
     <tvExpOptDlg>0</tvExpOptDlg>
     <cbSel>0</cbSel>
     <RteFlg>1</RteFlg>
